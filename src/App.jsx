@@ -1,12 +1,11 @@
+import { ThemeProvider } from "@/style/theme-provider";
+import UrlShortner from "./components/UrlShortner";
+
 const App = () => {
   return (
-    <div className="flex h-screen items-center justify-center bg-black text-white">
-      <form>
-        <label htmlFor="url">URL</label>
-        <input type="text" id="url" name="url" />
-        <button type="submit">Shorten</button>
-      </form>
-    </div>
+    <ThemeProvider>
+      <UrlShortner />
+    </ThemeProvider>
   );
 };
 
