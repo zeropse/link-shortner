@@ -1,10 +1,13 @@
 import { ThemeProvider } from "@/style/theme-provider";
-import UrlShortner from "./components/UrlShortner";
+import { BackgroundLines } from "@/components/ui/background-lines";
+import UrlShortener from "@/components/UrlShortener";
 
 const App = () => {
   return (
     <ThemeProvider>
-      <UrlShortner />
+      <BackgroundLines svgOptions={{ duration: 2 }}>
+        <UrlShortener />
+      </BackgroundLines>
     </ThemeProvider>
   );
 };
